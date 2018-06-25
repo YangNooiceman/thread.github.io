@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <!--在下面一行加入表单(form)-->
+        <form action="index.html" method="post">
+            <h1>账号注册</h1>
+            <fieldset>
+                <legend>步骤一</legend>
+                <label for="name">用户名：</label>
+                <input type="text" id="name" nanme="user_name">
+                
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" nanme="user_email">
+                
+                <label for="password">密码：</label>
+                <input type="password" id="password" nanme="user_password">
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>步骤二</legend>
+                <label for="bio">个人简介</label>
+                <textarea id="bio" name="user_biography"></textarea>
+                
+                <label for="job">请选择你的职业</label>
+                <select id="job" name="user_job">
+                    <option value="null">请选择-</option>
+                    <optgroup label="网页开发">
+                        <option value="frontend_dev">前段开发者</option>
+                        <option value="python_dev">python开发者</option>
+                    </optgroup>
+                    <option value="java_dev">java开发者</option>
+                    <option value="php_dev">php开发者</option>
+                    <option value="ruby_dev">ruby开发者</option>
+                    <option value="javascript_dev">javascript开发者</option>
+                </select>
+                <label>年龄</label>
+                    <input type="radio" id="under_18" name="user_age" value="under_18">
+                    <label for="unser_18">18岁以下</label>
+                
+                     <input type="radio" id="over_18" name="user_age" value="over_18">
+                    <label for="unser_18">18岁以上</label>
+                    
+                
+            </fieldset>
+            <button type="submit">注册</button>
+            
+            
+            
+        </form>
+      
+      
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
